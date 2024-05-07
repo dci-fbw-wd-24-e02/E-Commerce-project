@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(161, 143, 114);
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ======= banner-card ======== */
+
+.banner-card {
+}
+
+.banner-text {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  z-index: 1;
+}
+
+.banner-text p:hover {
+  color: red;
+  font-size: 24px;
+}
+
+/* ====end of Banner==== */
+
+/* ===start of Navbar=== */
+.container {
+  position: sticky;
+  top: 0px;
+  position: relative;
+  top: -5px;
+}
+
+.fa-house-chimney {
+  color: white;
+  padding-left: 10px;
+}
+.home a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
+.product a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+.gallery a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+.contact a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
+.about a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.container li {
+  float: left;
+  margin-right: 100px;
+}
+.container ul {
+  list-style-type: none;
+  background-color: rgba(77, 74, 18, 0.576);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.container a:hover {
+  background-color: #a5aa05;
+  /* font-size: 20px; */
+  color: blue;
+  border-radius: 20px;
+}
+/* ======== start of boxes========== */
+
+.box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.one {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  background-image: url(images/Sweet\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.info {
+  position: relative;
+  top: 94%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  z-index: -1;
+}
+
+.two {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  background-image: url(images/Sweet\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.three {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  background-image: url(images/Sweet3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.four {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  background-image: url(images/Sweet4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+/* ===animation=== */
+.one:hover {
+  margin-top: -20px;
+  color: red;
+  box-shadow: 10px 5px 50px rgb(162, 218, 179);
+}
+.two:hover {
+  margin-top: -20px;
+  color: red;
+  box-shadow: 10px 5px 50px rgb(162, 218, 179);
+}
+
+.three:hover {
+  margin-top: -20px;
+  color: red;
+  box-shadow: 10px 5px 50px rgb(162, 218, 179);
+}
+
+.four:hover {
+  margin-top: -20px;
+  color: red;
+  box-shadow: 10px 5px 50px rgb(162, 218, 179);
+}
