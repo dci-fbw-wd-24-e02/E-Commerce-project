@@ -1,100 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/94ee7b3ce3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Home.css" />
+    <title>My Project</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/94ee7b3ce3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="Home.css" />
-  <title>My Project</title>
-</head>
+  <body>
+    <header class="container">
+      <!-- <h1>logo</h1> -->
 
-<body>
-  <section class="banner">
-    <div class="banner-card">
-      <!-- the sith and height which is used at the end of this line. for setting the banner card to display
-        in row . and work in css  -->
+      <ul>
+        <li>
+          <span class="home"><a href="">Home</a></span>
+        </li>
+        <li class="about"><a href="">About</a></li>
+        <li class="product"><a href="">Product</a></li>
+        <li class="gallery"><a href="">Gallery</a></li>
+        <li class="contact"><a href="">Contact</a></li>
 
-      <!-- ------images----------- -->
+        <div><i class="fa-solid fa-heart"></i></div>
+        <div><i class="fa-solid fa-cart-arrow-down"></i></div>
+      </ul>
 
-      <img src="images/ceremony.jpg" alt="" width="100%" height="400px" />
+      <!-- 
+      ===Search botton===
+     -->
 
-      <div class="banner-text">
-        <h1>Crafting Unforgettable Celebrations for Every Occasion</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptates, laborum.
-        </p>
+      <form
+        class="search"
+        action="https://www.google.com/"
+        method="get"
+        target="_blank"
+      >
+        <input type="text" name="q" placeholder=" Search on Google" />
+        <button type="submit">Search</button>
+      </form>
 
-
-
+      <!-- login  -->
+      <div class="btn-login">
+        <button><i class="fa-solid fa-right-to-bracket"></i> Login</button>
       </div>
-  </section>
-  <!-- ====end of Banner===== -->
+    </header>
 
-  <section class="container">
-    <!-- <h1>logo</h1> -->
+    <section class="banner">
+      <div class="banner-card">
+        <div class="imageslider"></div>
 
-    <ul>
-      <li>
-        <span class="home"><a href="">Home</a></span>
-      </li>
-      <li class="product"><a href="">Product</a></li>
-      <li class="gallery"><a href="">Gallery</a></li>
-      <li class="contact"><a href="">Contact</a></li>
-      <li class="about"><a href="">About</a></li>
-    </ul>
-  </section>
-
-  <!-- ===== boxes======= -->
-  <main>
-    <section class="box">
-      <div class="one">
-        one
-        <div class="info">
+        <div class="banner-text">
+          <h1>Crafting Unforgettable Celebrations for Every Occasion</h1>
           <p>
-            price 200 euro <br/>
-            jus one left lets find more
-          </p>
-        </div>
-      </div>
-
-      <div class="two">
-        two
-        <div class="info">
-          <p>
-            price 200 euro <br/>
-            jus one left
-          </p>
-        </div>
-      </div>
-
-      <div class="three">
-        three
-        <div class="info">
-          <p>
-            price 200 euro <br/>
-            jus one left
-          </p>
-        </div>
-      </div>
-
-      <div class="four">
-        four
-        <div class="info">
-          <p>
-            price 200 euro <br/>
-            jus one left
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptates, laborum.
           </p>
         </div>
       </div>
     </section>
+    <!-- ====end of Banner===== -->
 
-  </main>
-
+    <!-- ===== card======= -->
+    <main>
+      <div class="card-container">
+        <!-- card 1 -->
+        <div class="card">
+          <img src="images/Sweet 1.jpg" alt="" />
+          <div class="card-content">
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <img src="images/Sweet 2.jpg" alt="" />
+          <div class="card-content">
+            <h3>card 2</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="card">
+          <img src="images/Sweet3.jpeg" alt="" />
+          <div class="card-content">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
   <footer>
-   
-  </footer>
-</body>
+    <div class="footercontainer">
+      <div class="socialicons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
 
+      <div class="footerBottom">
+        <p>
+          Copyright &copy;2024 Designed
+          <span class="designer">Fardin Azimi</span>
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>

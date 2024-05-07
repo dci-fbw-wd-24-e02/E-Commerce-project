@@ -10,11 +10,41 @@ body {
   font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
+  position: relative;
+}
+.imageslider {
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid red; */
+  background-image: url(images/ceremony.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: imageslider 10s linear infinite;
+}
+/* in here i used animation for the Euro section */
+@keyframes imageslider {
+  0% {
+    background-image: url(images/ceremony.jpg);
+  }
+  25% {
+    background-image: url(images/Sweet\ 1.jpg);
+  }
+  50% {
+    background-image: url(images/Sweet\ 2.jpg);
+  }
+  75% {
+    background-image: url(images/Sweet3.jpeg);
+  }
+  100% {
+    background-image: url(images/Sweet4.jpg);
+  }
 }
 
 /* ======= banner-card ======== */
 
 .banner-card {
+  position: relative;
+  top: -5px;
 }
 
 .banner-text {
@@ -34,166 +64,246 @@ body {
 
 /* ===start of Navbar=== */
 .container {
-  position: sticky;
-  top: 0px;
   position: relative;
   top: -5px;
 }
-
-.fa-house-chimney {
-  color: white;
-  padding-left: 10px;
-}
-.home a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-  display: inline-block;
-  margin-right: 5px;
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
-.product a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-  display: inline-block;
-  margin-right: 5px;
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-.gallery a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-  display: inline-block;
-  margin-right: 5px;
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-.contact a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-  display: inline-block;
-  margin-right: 5px;
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
-.about a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-  display: inline-block;
-  margin-right: 5px;
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
 .container a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 25px;
   display: block;
   text-align: center;
 }
 
 .container li {
   float: left;
-  margin-right: 100px;
+  margin-right: -20px;
 }
 .container ul {
   list-style-type: none;
   background-color: rgba(77, 74, 18, 0.576);
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
   overflow: hidden;
 }
 
+.fa-heart,
+.fa-cart-arrow-down {
+  float: right;
+  padding: 25px 10px;
+  font-size: 25px;
+  margin: 0px 10px;
+  position: relative;
+  right: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-cart-arrow-down:hover {
+  color: red;
+}
+.fa-heart:hover {
+  color: red;
+}
+
+.search {
+  display: block;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.search input {
+  width: 600px;
+  height: 30px;
+  margin: 20px 20px 0px 0px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  padding-left: 20px;
+  columns: #fff;
+  font-size: 18px;
+  color: black;
+  position: relative;
+}
+button {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 30px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-login {
+  display: block;
+  text-align: right;
+  position: absolute;
+  right: 400px;
+  bottom: 15px;
+}
+
+.home a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
+.product a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f29b";
+
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+.gallery a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+.contact a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f25b";
+
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
+.about a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2bb";
+
+  color: #fff;
+  margin: 5px 10px 0px 0px;
+}
+
 .container a:hover {
-  background-color: #a5aa05;
+  background-color: #a5aa0594;
   /* font-size: 20px; */
   color: blue;
-  border-radius: 20px;
+  border-radius: 15px;
+  transition: all 0.9s;
 }
-/* ======== start of boxes========== */
-
-.box {
-  height: auto;
-  width: 100%;
+/* ======== start of cards========== */
+.card-container {
   display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
 }
 
-.one {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  background-image: url(images/Sweet\ 1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
+.card {
+  width: 325px;
+
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 8px 0px 31px 7px rgba(0, 0, 0, 0.75);
+  margin: 20px;
+}
+.card-content {
+  padding-left: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+.card:hover {
+  color: red;
+  transform: translatey(-10px);
+  box-shadow: 8px 0px 31px 7px rgba(204, 63, 63, 0.75);
   transition: all 0.5s;
 }
-.info {
-  position: relative;
-  top: 94%;
-  border-radius: 0px 0px 10px 10px;
+
+/* ====footer==== */
+
+footer {
+  background-color: #111;
+  margin-top: 100px;
+}
+
+.footerconatiner {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
   background-color: white;
-  z-index: -1;
+  margin: 10px;
+  border-radius: 50%;
 }
 
-.two {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  background-image: url(images/Sweet\ 2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  transition: all 0.5s;
+.socialicons a i {
+  font-size: 30px;
+  color: black;
+  opacity: 0.9;
+}
+.socialicons a:hover {
+  background-color: #3c3636;
+  transition: 0.5s;
 }
 
-.three {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  background-image: url(images/Sweet3.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  transition: all 0.5s;
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 
-.four {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  background-image: url(images/Sweet4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  transition: all 0.5s;
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerBottom {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
 }
 
-/* ===animation=== */
-.one:hover {
-  margin-top: -20px;
-  color: red;
-  box-shadow: 10px 5px 50px rgb(162, 218, 179);
-}
-.two:hover {
-  margin-top: -20px;
-  color: red;
-  box-shadow: 10px 5px 50px rgb(162, 218, 179);
-}
+/* === Target the responsive screens=== */
+@media (max-width: 375px) {
+  .footerconatiner {
+    width: 100%;
+  }
 
-.three:hover {
-  margin-top: -20px;
-  color: red;
-  box-shadow: 10px 5px 50px rgb(162, 218, 179);
-}
+  .info {
+    display: block;
+    padding-top: 20px;
+  }
 
-.four:hover {
-  margin-top: -20px;
-  color: red;
-  box-shadow: 10px 5px 50px rgb(162, 218, 179);
+  .one {
+    display: block;
+    padding: 100px 70px;
+  }
+}
+/* ===================================== */
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
 }
