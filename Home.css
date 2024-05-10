@@ -5,8 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: rgb(161, 143, 114);
+  background-color: #f0e5c4;
   font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
@@ -16,27 +17,100 @@ body {
   width: 100%;
   height: 500px;
   /* border: 1px solid red; */
-  background-image: url(images/ceremony.jpg);
+  background-image: url(images/Stage_decore\ 1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  animation: imageslider 10s linear infinite;
+  animation: imageslider 30s linear infinite;
 }
 /* in here i used animation for the Euro section */
 @keyframes imageslider {
   0% {
-    background-image: url(images/ceremony.jpg);
+    background-image: url(images/Stage_decore\ 2.jpg);
   }
-  25% {
-    background-image: url(images/Sweet\ 1.jpg);
+  20% {
+    background-image: url(images/Stage_decore\ 3.jpg);
   }
-  50% {
-    background-image: url(images/Sweet\ 2.jpg);
+  40% {
+    background-image: url(images/Stage_decore\ 4.jpg);
   }
-  75% {
-    background-image: url(images/Sweet3.jpeg);
+  60% {
+    background-image: url(images/Stage_decore\ 5.jpg);
   }
-  100% {
-    background-image: url(images/Sweet4.jpg);
+  80% {
+    background-image: url(images/candy-7.jpg);
+  }
+  10% {
+    background-image: url(images/Stage_decore\ 6.jpg);
+  }
+}
+
+/* ===@media=== */
+
+/* screen szie for navbar */
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+  .search {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+  }
+  .shopping {
+    position: absolute;
+    z-index: 1;
+    padding-left: 300px;
+  }
+  .shopping {
+    position: fixed;
+  }
+  .shopping i {
+    color: rgb(10, 10, 30);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+  div.navbar {
+    height: auto;
+    background-color: rgb(56, 34, 4);
+  }
+  .navbar ul {
+  }
+
+  .navbar ul li a {
+    color: #d5cbcb;
+    margin: 0;
+    padding: 10px;
+    display: block;
+    justify-content: space-between;
+  }
+  .navbar ul li {
+    border: ;
+  }
+  .fa-magnifying-glass {
+    color: white;
+    position: absolute;
+    padding: 0px 50px;
+    margin-left: 100px;
+  }
+  .shopping i {
+    padding-top: 50px;
+    color: red;
+  }
+  .fa-cart-shopping {
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    left: 40px;
+  }
+
+  .fa-heart {
+    font-size: 20px;
+    top: 60px;
+  }
+  .fa-magnifying-glass {
+    display: none;
+  }
+  .placeholder {
+    color: white;
   }
 }
 
@@ -48,11 +122,11 @@ body {
 }
 
 .banner-text {
-  color: white;
+  color: black;
   position: absolute;
   top: 150px;
   left: 100px;
-  z-index: 1;
+  z-index: ;
 }
 
 .banner-text p:hover {
@@ -63,57 +137,53 @@ body {
 /* ====end of Banner==== */
 
 /* ===start of Navbar=== */
-.container {
-  position: relative;
-  top: -5px;
-}
-.container a {
-  color: white;
-  text-decoration: none;
-  padding: 25px;
-  display: block;
-  text-align: center;
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #bba14e;
+
+  /* to fixed the navbar */
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
-.container li {
-  float: left;
-  margin-right: -20px;
-}
-.container ul {
+ul {
   list-style-type: none;
-  background-color: rgba(77, 74, 18, 0.576);
-  padding: 10px;
-  margin: 0px;
   overflow: hidden;
+  display: block;
+  float: left;
 }
 
-.fa-heart,
-.fa-cart-arrow-down {
-  float: right;
-  padding: 25px 10px;
-  font-size: 25px;
-  margin: 0px 10px;
-  position: relative;
-  right: 100px;
+li {
+  float: left;
+  border-right: 1px solid #bbb; /* we select the border for the right side of each li tag*/
+}
+
+li:last-child {
+  /* the last child selected to be no border in the right side */
+  border-right: none;
+}
+
+a {
+  display: block;
   color: #fff;
-  cursor: pointer;
-}
-
-.fa-cart-arrow-down:hover {
-  color: red;
-}
-.fa-heart:hover {
-  color: red;
+  text-align: center;
+  padding: 24px 56px;
+  text-decoration: none;
+  font-size: 24p;
+  /* The CSS transition property is used to smoothly animate changes to CSS properties
+   over a specified duration. In your example, transition: all 0.5;,  or milliseconds (ms). */
+  transition: all 0.5s;
 }
 
 .search {
-  display: block;
-  text-align: center;
-  padding-bottom: 15px;
+  float: right;
 }
-
+/* here is the Search box  */
 .search input {
-  width: 600px;
+  width: 300px;
   height: 30px;
   margin: 20px 20px 0px 0px;
   border-radius: 15px;
@@ -123,72 +193,36 @@ body {
   padding-left: 20px;
   columns: #fff;
   font-size: 18px;
-  color: black;
-  position: relative;
+  color: red;
 }
-button {
-  border: 1px solid black;
-  border-radius: 15px;
-  height: 30px;
-  width: 80px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  cursor: pointer;
+
+.navbar ul li:hover {
+  background-color: #5ac2dd;
+  transition: all 0.5s;
 }
-.btn-login {
-  display: block;
-  text-align: right;
+
+/* market icons */
+.shopping {
+  padding-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.shopping a {
+  padding-right: 50px;
+  font-size: 30px;
+}
+.fa-heart {
   position: absolute;
-  right: 400px;
-  bottom: 15px;
+  right: 70px;
+}
+/* end of navbar */
+
+/* ===hamburger=== */
+.hamburger {
+  display: none;
 }
 
-.home a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f007";
-
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
-.product a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f29b";
-
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-.gallery a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f007";
-
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-.contact a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f25b";
-
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
-.about a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f2bb";
-
-  color: #fff;
-  margin: 5px 10px 0px 0px;
-}
-
-.container a:hover {
-  background-color: #a5aa0594;
-  /* font-size: 20px; */
-  color: blue;
-  border-radius: 15px;
-  transition: all 0.9s;
-}
 /* ======== start of cards========== */
 .card-container {
   display: flex;
@@ -219,6 +253,32 @@ button {
   transform: translatey(-10px);
   box-shadow: 8px 0px 31px 7px rgba(204, 63, 63, 0.75);
   transition: all 0.5s;
+}
+
+/*  card buttons in here */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #eab676;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-content a {
+  padding-top: 10px 20px;
+  margin: 10px;
+}
+
+/* card buttons hover */
+
+.card-container a:hover {
+  color: black;
+  background-color: #5ac2dd;
 }
 
 /* ====footer==== */
@@ -252,7 +312,7 @@ footer {
   opacity: 0.9;
 }
 .socialicons a:hover {
-  background-color: #3c3636;
+  background-color: #730d0d;
   transition: 0.5s;
 }
 
@@ -275,35 +335,7 @@ footer {
 }
 .footerBottom {
   color: white;
-  background-color: black;
+  background-color: #532719;
   padding: 20px;
   text-align: center;
-}
-
-/* === Target the responsive screens=== */
-@media (max-width: 375px) {
-  .footerconatiner {
-    width: 100%;
-  }
-
-  .info {
-    display: block;
-    padding-top: 20px;
-  }
-
-  .one {
-    display: block;
-    padding: 100px 70px;
-  }
-}
-/* ===================================== */
-@media (max-width: 700px) {
-  .footerNav ul {
-    flex-direction: column;
-  }
-  .footerNav ul li {
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-  }
 }

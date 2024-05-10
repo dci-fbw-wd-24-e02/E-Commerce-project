@@ -1,171 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/94ee7b3ce3.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="Home.css" />
-    <title>My Project</title>
-  </head>
 
-  <body>
-    <header class="container">
-      <!-- <h1>logo</h1> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/94ee7b3ce3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Home.css" />
+  <title>My Project</title>
+</head>
 
-      <ul>
-        <li>
-          <span class="home"><a href="">Home</a></span>
-        </li>
-        <li class="about"><a href="">About</a></li>
-        <li class="product"><a href="">Product</a></li>
-        <li class="gallery"><a href="">Gallery</a></li>
-        <li class="contact"><a href="">Contact</a></li>
+<body>
+  <div class="navbar">
+    <ul>
+      <li>
+        <!--  after linked the font awesome i added the copy link of icon from website. i past it in front of the Home text -->
+        <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-regular fa-newspaper"></i> New</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
+      </li>
+      <li>
+         <a href="#"></i>About</a>
+      </li>
+          <!-- i would like to add Icon in css  -->
 
-        <div><i class="fa-solid fa-heart"></i></div>
-        <div><i class="fa-solid fa-cart-arrow-down"></i></div>
-      </ul>
 
-      <!-- 
-      ===Search botton===
-     -->
+      
 
-      <form
-        class="search"
-        action="https://www.google.com/"
-        method="get"
-        target="_blank"
-      >
-        <input type="text" name="q" placeholder=" Search on Google" />
-        <button type="submit">Search</button>
-      </form>
+    </ul>
+   
+    
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" name="text" placeholder="Search here" />
+      <!-- end of Search -->
+    </div>
+    <!-- end of nav -->
+  </div>
 
-      <!-- login  -->
-      <div class="btn-login">
-        <button><i class="fa-solid fa-right-to-bracket"></i> Login</button>
-      </div>
-    </header>
+  <div class="shopping">
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
 
-    <section class="banner">
-      <div class="banner-card">
-        <div class="imageslider"></div>
+        
+    <a href="#"><i class="fa-solid fa-heart"></i></a>
+    
+  
+  </div>
 
-        <div class="banner-text">
-          <h1>Crafting Unforgettable Celebrations for Every Occasion</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptates, laborum.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- ====end of Banner===== -->
 
-    <!-- ===== card======= -->
-    <main>
-      <div class="card-container">
-        <!-- card 1 -->
-        <div class="card">
-          <img src="images/Sweet 1.jpg" alt="" />
-          <div class="card-content">
-            <h3>card 1</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 2 -->
-        <div class="card">
-          <img src="images/Sweet 2.jpg" alt="" />
-          <div class="card-content">
-            <h3>card 2</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 4 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 5 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 6 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 7 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-        <!-- card 8 -->
-        <div class="card">
-          <img src="images/Sweet3.jpeg" alt="" />
-          <div class="card-content">
-            <h3>card 3</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn"> Read More</a>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-  <footer>
-    <div class="footercontainer">
-      <div class="socialicons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <div class="footerNav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
+ 
 
-      <div class="footerBottom">
+  <section class="banner">
+    <div class="banner-card">
+      <div class="imageslider"></div>
+
+      <div class="banner-text">
+        <h1>Crafting Unforgettable Celebrations for Every Occasion</h1>
         <p>
-          Copyright &copy;2024 Designed
-          <span class="designer">Fardin Azimi</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptates, laborum.
         </p>
       </div>
     </div>
-  </footer>
+  </section>
+  <!-- ====end of Banner===== -->
+
+  <!-- ===== card======= -->
+  <main>
+    <div class="card-container">
+      <!-- card 1 -->
+      <div class="card">
+        <img src="images/candy-1.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 1</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-1.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card">
+        <img src="images/candy-2.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 2</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-2.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card">
+        <img src="images/candy-3.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-3.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="card">
+        <img src="images/candy-4.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-1.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="card">
+        <img src="images/candy-5.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-5.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="card">
+        <img src="images/candy-6.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-6.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 7 -->
+      <div class="card">
+        <img src="images/candy-7.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-7.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+      <!-- card 8 -->
+      <div class="card">
+        <img src="images/candy-8.jpg" alt="" />
+        <div class="card-content">
+          <h3>card 3</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="images/candy-8.jpg" class="btn" target="_blank">
+            Read More</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footercontainer">
+        <div class="socialicons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <!-- <div class="footerNav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div> -->
+
+        <div class="footerBottom">
+          <p>
+            Copyright &copy;2024 Designed
+            <span class="designer">Fardin Azimi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
