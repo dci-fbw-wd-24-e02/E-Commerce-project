@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f0e5c4;
+  background-color: #4a490a;
   font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
@@ -245,11 +245,67 @@ body {
   .banner {
     position: relative;
     /* top: 200px; */
-    padding-top: 200px;
+    padding-top: 60px;
   }
   .banner-card {
     position: relative;
-    top: 220px;
+  }
+}
+/* ========================================= lest do it tommorow for s */
+@media (max-width: 576px) {
+  div.navbar {
+    width: 100%;
+    height: 60px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar ul li a {
+    font-size: 10px;
+    padding: 5px 5px;
+    position: relative;
+    top: 10px;
+  }
+  .navbar ul li {
+    border: none;
+  }
+
+  .shopping {
+    position: relative;
+    top: 0px;
+  }
+
+  .shopping .input {
+    position: absolute;
+    left: 50px;
+    width: 100px;
+  }
+  .shopping .fa-magnifying-glass {
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+  }
+  .shopping .fa-cart-shopping {
+    position: absolute;
+    left: 250px;
+    top: 25px;
+    font-size: 15px;
+  }
+  .shopping .fa-heart {
+    position: absolute;
+    left: 300px;
+    top: 25px;
+    font-size: 15px;
+  }
+  .banner {
+    position: relative;
+    /* top: 200px; */
+    padding-top: 60px;
+  }
+  .banner-card {
+    position: relative;
   }
 }
 /* ======= banner-card ======== */
@@ -264,7 +320,7 @@ body {
   position: absolute;
   top: 150px;
   left: 100px;
-  z-index: ;
+  z-index: 0p;
 }
 
 .banner-text p:hover {
@@ -279,7 +335,7 @@ body {
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: #bba14e;
+  background-color: #4a490a;
 
   /* to fixed the navbar */
   position: fixed;
@@ -329,13 +385,13 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.5;
   padding-left: 20px;
-  columns: #fff;
+
   font-size: 18px;
   color: red;
 }
 
 .navbar ul li:hover {
-  background-color: #5ac2dd;
+  background-color: #353406;
   transition: all 0.5s;
 }
 
@@ -369,7 +425,7 @@ a {
 }
 
 .shopping a:hover {
-  color: red;
+  color: #0a0a05;
 }
 .
 /* end of navbar */
@@ -390,8 +446,8 @@ a {
 .card {
   width: 325px;
 
-  background-color: #f0f0f0;
-  border-radius: 8px;
+  background-color: #96952a;
+  border-radius: 37px 37px 37px 37px;
   overflow: hidden;
   box-shadow: 8px 0px 31px 7px rgba(0, 0, 0, 0.75);
   margin: 20px;
@@ -407,7 +463,7 @@ a {
 .card:hover {
   color: red;
   transform: translatey(-10px);
-  box-shadow: 8px 0px 31px 7px rgba(204, 63, 63, 0.75);
+  box-shadow: 8px 0px 31px 7px #96952a;
   transition: all 0.5s;
 }
 
@@ -416,7 +472,7 @@ a {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #eab676;
+  background-color: #4a490a;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -434,7 +490,7 @@ a {
 
 .card-container a:hover {
   color: black;
-  background-color: #5ac2dd;
+  background-color: white;
 }
 
 /* ====footer==== */
@@ -468,7 +524,7 @@ footer {
   opacity: 0.9;
 }
 .socialicons a:hover {
-  background-color: #730d0d;
+  background-color: #96952a;
   transition: 0.5s;
 }
 
@@ -491,7 +547,7 @@ footer {
 }
 .footerBottom {
   color: white;
-  background-color: #532719;
+  background-color: #96952a;
   padding: 20px;
   text-align: center;
 }
